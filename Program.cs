@@ -1,4 +1,27 @@
-﻿/*
+﻿//Программа, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+Console.Write("Введите пятизначное чесло: ");
+var Number =Console.ReadLine();
+var NumberP = Number!.Length;
+
+if (NumberP == 5)
+{
+  if(Number[0] == Number[4] && Number[1] == Number[3])
+    {
+      Console.Write("Число: " + Number + " ,палендром.");
+    }
+    else
+    {
+      Console.Write("Число: " + Number + "  не является палендромом.");
+    }
+}    
+  else
+  {
+      Console.Write("Ошибка! Введите пятизначное число!");
+
+  }  
+
+
+/*
 // Программа, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
   Console.Write("Введите координату точки А по оси X=");
   int x1= Convert.ToInt32(Console.ReadLine());
